@@ -20,4 +20,8 @@ Cenário 3: POST Login Usuário 200
     POST Login /login
     Validar Status Code "200"
     Validar Token no Response
+
+Cenário 4: PUT Update de Usuário
+    Criar Sessao
+    PUT 
     
