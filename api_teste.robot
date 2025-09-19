@@ -23,5 +23,6 @@ Cenário 3: POST Login Usuário 200
 
 Cenário 4: PUT Update de Usuário
     Criar Sessao
-    PUT 
+    PUT Update Reserva
+    Validar Status Code
     

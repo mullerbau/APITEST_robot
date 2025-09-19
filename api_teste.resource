@@ -37,6 +37,14 @@ POST Login /login
     Set Global Variable   ${response}
     Log To Console    Response: ${response.content}
 
+PUT Update Reserva
+    &{payload}=     Create Dictionary     firstname=Eric    lastname=waters     
+    ... totalprice=150    depositpaid=True    checkin=2025-01-10    checkout=2025-01-28
+    ...    additionalneeds=Breakfast
+    ${response}=     PUT On Session     booker    ${BOOKING_ENDPOINT}    json=${payload}
+    Set Global Variable    ${response}
+    Log To Console     Response: ${response.content}
+
 Validar Token no Response
     Dictionary Should Contain Key    ${response.json()}    token
     Log To Console    Token: ${response.json()['token']}
