@@ -24,6 +24,7 @@ pip install robotframework robotframework-requests
 ``` 
 ## Estrutura
 
+```
 ├── resources/
 │   └── api_teste.resource     # Ficheiro com as palavras-chave reutilizáveis (keywords) da API.
 |
@@ -35,7 +36,7 @@ pip install robotframework robotframework-requests
 |
 └── variaveis/
     └── variaveis_globais.robot  # Ficheiro com variáveis e configurações globais.
-
+```
 
 ## Como Executar os Testes
 1. Navega até a pasta raiz do projeto.
