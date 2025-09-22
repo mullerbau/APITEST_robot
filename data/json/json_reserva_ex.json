@@ -1,0 +1,53 @@
+{   
+    "reserva_valida": {
+    "firstname": "João",
+    "lastname": "Silva",
+    "totalprice": 250,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2025-10-01",
+        "checkout": "2025-10-10"
+    },
+    "additionalneeds": "Café da manhã"
+    },
+    "reserva_invalida": {
+    "firstname": "Maria",
+    "lastname": "Santos",
+    "totalprice": -50,
+    "depositpaid": true,
+    "bookingdates": {
+        "checkin": "2025-12-01",
+        "checkout": "2025-11-30"
+    },
+    "additionalneeds": "Jantar"
+    }, 
+    "reserva_sem_dados": {   
+        "firstname": "",
+        "lastname": "",
+        "totalprice": "",
+        "depositpaid": "",
+        "bookingdates": {
+            "checkin": "",
+            "checkout": ""
+        },
+        "additionalneeds": ""
+    },
+    "reserva_sem_datas": {   
+        "firstname": "Carlos",
+        "lastname": "Oliveira",
+        "totalprice": 180,
+        "depositpaid": true,
+        "additionalneeds": "Wi-Fi"
+    },
+    "reserva_sem_nome": {   
+        "firstname": "",
+        "lastname": "Pereira",
+        "totalprice": 320,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2025-11-15",
+            "checkout": "2025-11-20"
+        },
+        "additionalneeds": "Estacionamento"
+    }
+}
