@@ -5,6 +5,7 @@ Resource       ../resource/api_teste.resource
 
 *** Test Cases ***
 Caso 1: PUT Update Booking
+    [Tags]    put
     [Documentation]    Testa o endpoint de atualização de reserva.
     Criar Sessao
     ${token}=    Token de Autenticação
@@ -13,6 +14,7 @@ Caso 1: PUT Update Booking
     Log To Console    Reserva atualizada com sucesso: ${booking_id}
 
 Caso 2: PUT Update Booking falha sem token
+    [Tags]    put
     [Documentation]    Testa o endpoint de atualização de reserva sem token.
     Criar Sessao
     ${booking_id}=    Criar reserva
@@ -21,6 +23,7 @@ Caso 2: PUT Update Booking falha sem token
     Log To Console    Tentativa de atualização sem token realizada.
 
 Caso 3: PUT Update Booking com dados inválidos
+    [Tags]    put
     [Documentation]    Testa o endpoint de atualização de reserva com dados inválidos.
     Criar Sessao
     ${token}=    Token de Autenticação

@@ -5,12 +5,14 @@ Resource       ../resource/api_teste.resource
 
 *** Test Cases ***
 Caso 1: GET Booking
+    [Tags]    get
     [Documentation]    Testa o endpoint de obtenção de reservas.
     Criar Sessao
     Listar Reservas por ID
     Log To Console    Lista de reservas obtida com sucesso.
 
 Caso 2: GET Booking por ID
+    [Tags]    get
     [Documentation]    Testa o endpoint de obtenção de reserva por ID.
     Criar Sessao
     Listar Reservas por ID especifico    ${BOOKING_ID}

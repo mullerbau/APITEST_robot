@@ -1,0 +1,18 @@
+{
+        "valid_user": {
+            "username": "admin",
+            "password": "password123"
+        },
+        "invalid_user": {
+            "username": "xambasca",
+            "password": "onetwothree"
+        },
+        "no_password": {
+            "username": "joaozinho",
+            "password": ""
+        },
+        "no_username": {
+            "username": "",
+            "password": "senha123"
+        }
+}
